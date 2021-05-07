@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var counter = 1
+        
+        function changeIt() {
+        
+            if (counter == 1) {
+                document.searchImage.src = "p2.jpg"
+                counter = 2
+            }
+            else if (counter == 2) {
+                document.searchImage.src = "hello.jpg"
+                counter = 3
+            }
+            else if (counter == 3) {
+                document.searchImage.src = "bbye.jpg"
+                counter = 4
+            }
+            else if (counter == 4) {
+                document.searchImage.src = "apple.jpg"
+                counter = 5
+            }
+            else if (counter == 5) {
+                document.searchImage.src = "mango.jpg"
+                counter = 6
+            }
+            else {
+                document.searchImage.src = "p1.jpg"
+                counter = 1
+            }
+        
+        }
+        function moveBack(){
+            counter = counter - 2;
+            changeIt();
+        }
+        
+        </script>
+        <style>
+            .btn{
+                
+                margin: 20px;
+                width: 50px;
+                height: 50px;
+              
+            }
+        </style>
+</head>
+<body>
+    <img src="p1.jpg" name="searchImage" style="width: 500px; height: 500px;">
+
+        <form>
+            <input type="image" src="bck.png" value="Go Backwards" onClick="moveBack()" class="btn">
+            <input type="image" src="fwd.png" value="Go Forward" onClick="changeIt()" class="btn">
+
+        </form>
+        
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 17</title>
+</head>
+<body>
+    <div>
+        <img src="p1.jpg" alt="" id="image" name="image">
+    </div>
+    <button id="btn">CLOSE</button>
+
+    <style>
+        #image{
+            width: 500px;
+            height: 500px;
+        }
+        #btn{
+            margin: 50px;
+        }
+    </style>
+
+    <script>
+        function openGoogle() {
+            newWindow = window.open("https://www.google.com/");
+        }
+        function close() {
+            newWindow.close();
+        }
+        document.getElementById("image").addEventListener("click", openGoogle);
+        document.getElementById("btn").addEventListener("click", close);
+    </script>
+</body>
+</html>

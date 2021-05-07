@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        You do not like green <span id="w1" >eggs</span> and ham?<br>
+        I do not like them, Sam-I-am.<br>
+        Could you, would you, with a <span id="w2" >goat</span>?<br>
+        I would not, could not, with a goat!<br>
+        Would you, could you, on a boat?<br>
+        I could not, would not, on a boat.<br>
+        I will not, will not, with a goat.<br>
+        I will not eat them in the rain.<br>
+        I will not eat them on a train.<br>
+        Not in the <span id="w3" >dark</span>! Not in a tree!<br>
+        Not in a car! You let me be!<br>
+        I do not like them in a box.<br>
+        I do not like them with a fox.<br>
+        I will not eat them in a house.<br>
+        I do not like them with a <span id="w4" >mouse</span>.<br>
+        I do not like them here or there.<br>
+        I do not like them ANYWHERE!<br>
+        I do not like green <span id="w5" >eggs</span> and ham!<br>
+        I do not like them, Sam-I-am.<br>   
+        
+    </div>
+    <script>
+        let name = prompt('Enter you name', 'name');
+        let word1 = prompt('Enter the first word', 'word');
+        let word2 = prompt('Enter the second word', 'word');
+        let word3 = prompt('Enter the third word', 'word');
+        let word4 = prompt('Enter the fourth word', 'word');
+        let word5 = prompt('Enter the fifth word', 'word');
+        let user_color = prompt('Enter the color name of your choice', 'color');
+
+        document.getElementById('w1').innerHTML = word1;
+        document.getElementById('w2').innerHTML = word2;
+        document.getElementById('w3').innerHTML = word3;
+        document.getElementById('w4').innerHTML = word4;
+        document.getElementById('w5').innerHTML = word5;
+
+        document.getElementById('w1').style.color = user_color;
+        document.getElementById('w2').style.color = user_color;
+        document.getElementById('w3').style.color = user_color;
+        document.getElementById('w4').style.color = user_color;
+        document.getElementById('w5').style.color = user_color;
+    </script>
+</body>
+</html>
