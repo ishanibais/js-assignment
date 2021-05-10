@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+    <script>
+        const keys = [];
+        const code = 'ishani';
+
+        window.addEventListener('keyup', (e) => {
+            console.log(e.key);
+            keys.push(e.key);
+            keys.splice(-code.length - 1, keys.length - code.length);
+
+            if (keys.join('').includes(code)) {
+                console.log('hey!');
+                cornify_add();
+            }
+
+            console.log(keys);
+        });
+    </script>
+</body>
+</html>
